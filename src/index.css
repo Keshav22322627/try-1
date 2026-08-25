@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F8FAFC;
+    color: #0F172A;
+    letter-spacing: -0.01em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    letter-spacing: -0.02em;
+    color: inherit;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Hyundai Power Brand & Modern Electrent Aesthetic Styling */
+.hyundai-bg-navy {
+  background-color: #002C6C;
+}
+.hyundai-bg-blue {
+  background-color: #0066B1;
+}
+.hyundai-text-navy {
+  color: #002C6C;
+}
+.hyundai-text-blue {
+  color: #0066B1;
+}
+
+.hyundai-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hyundai-card:hover {
+  border-color: #0066B1;
+  box-shadow: 0 12px 28px -6px rgba(0, 44, 108, 0.12);
+  transform: translateY(-2px);
+}
+
+.hyundai-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+.hyundai-glass-dark {
+  background: rgba(0, 44, 108, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.electrent-badge-green {
+  background-color: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+}
+
+.electrent-badge-blue {
+  background-color: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+}
+
+.electrent-badge-yellow {
+  background-color: #FEFCE8;
+  color: #A16207;
+  border: 1px solid #FEF08A;
+}
+
+.electrent-badge-red {
+  background-color: #FEF2F2;
+  color: #B91C1C;
+  border: 1px solid #FCA5A5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0066B1;
+}
+
+/* Print styling for PDF/Reports */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
